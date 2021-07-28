@@ -1,0 +1,32 @@
+{
+  "articles": [
+    {
+      "id": "a1",
+      "title": "Future Is Green",
+      "date": "September 24, 2014",
+      "description": "Collaboratively administrate empowered markets via plug-and-playnetworks. Dynamically procrastinate B2C users after installed basebenefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+      "image": "caralog4.jpg"
+    },
+    {
+      "id": "a2",
+      "title": "Keep your Balance",
+      "date": "September 30, 2015",
+      "description": "Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortor solutions without funstional solutions.",
+      "image": "caralog5.jpg"
+    },
+    {
+      "id": "a3",
+      "title": "Business Group",
+      "date": "September 02, 2016",
+      "description": "Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.",
+      "image": "caralog6.jpg"
+    },
+    {
+      "id": "a4",
+      "title": "Financial Situations",
+      "date": "September 02, 2016",
+      "description": "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.",
+      "image": "caralog1.jpg"
+    }
+  ]
+}
