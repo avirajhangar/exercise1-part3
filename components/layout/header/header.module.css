@@ -100,6 +100,10 @@
   top: 0;
 }
 
+.mobilewrap ul {
+  padding: 0;
+}
+
 .mobilewrap ul li {
   margin: 20px 0;
   text-align: center;
