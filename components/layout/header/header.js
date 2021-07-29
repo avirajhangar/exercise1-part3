@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
+import Link from "next/link";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
   };
   return (
     <HeaderContainer>
-      <HeaderLogo href="/">CodePlayground</HeaderLogo>
+      <Link href="/">CodePlayground</Link>
       <MobileNav>
         <MenuButton onClick={toggleMenu}>
           <Hamburger>
@@ -20,16 +21,16 @@ const Header = () => {
         <MenuItems open={menuOpen}>
           <DesktopMenuUl>
             <MenuItemList>
-              <DesktopLink href="/">Home</DesktopLink>
+              <Link href="/">Home</Link>
             </MenuItemList>
             <MenuItemList>
-              <DesktopLink href="/">About us</DesktopLink>
+              <Link href="/about-us">About us</Link>
             </MenuItemList>
             <MenuItemList>
-              <DesktopLink href="/">sample page</DesktopLink>
+              <Link href="/sample-page">sample page</Link>
             </MenuItemList>
             <MenuItemList>
-              <DesktopLink href="/">contact</DesktopLink>
+              <Link href="/contact">contact</Link>
             </MenuItemList>
           </DesktopMenuUl>
         </MenuItems>
@@ -46,25 +47,25 @@ const HeaderContainer = styled.div`
   height: 50px;
   padding: 0 15px;
 
+  a {
+    color: gray;
+    font-size: 19px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @media (min-width: 1200px) {
+      color: white;
+    }
+  }
+
   @media (min-width: 1200px) {
     position: fixed;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
-`;
-
-const HeaderLogo = styled.a`
-  color: gray;
-  font-size: 19px;
-  font-weight: 900;
-  font-family: "Roboto", sans-serif;
-  margin-top: auto;
-  margin-bottom: auto;
-
-  @media (min-width: 1200px) {
-    color: white;
   }
 `;
 
@@ -185,6 +186,17 @@ const MenuItemList = styled.li`
   text-align: center;
   margin: 20px 0;
 
+  a {
+    @media (min-width: 1200px) {
+      margin-right: 15px;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
   @media (min-width: 1200px) {
     margin: 0;
   }
@@ -201,17 +213,6 @@ const DesktopMenuUl = styled.ul`
     gap: 25px;
     margin-right: 15px;
     align-items: center;
-  }
-`;
-
-const DesktopLink = styled.a`
-  @media (min-width: 1200px) {
-    margin-right: 15px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
   }
 `;
 

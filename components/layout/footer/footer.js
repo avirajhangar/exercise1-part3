@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -27,7 +28,7 @@ const Footer = () => {
         </SocialMediaContainer>
         <Copyright>
           &copy; 2021
-          <CopyrightLink href="/">Hangar WW - Code Playground</CopyrightLink>
+          <Link href="/">Hangar WW - Code Playground</Link>
         </Copyright>
       </FooterContainer>
     </footer>
@@ -65,11 +66,11 @@ const Copyright = styled.p`
   font-family: "Roboto", sans-serif;
   padding: 35px 0 0 0;
   text-align: center;
-`;
 
-const CopyrightLink = styled.a`
-  text-decoration: underline;
-  font-weight: 900;
+  a {
+    text-decoration: underline;
+    font-weight: 900;
+  }
 `;
 
 export default Footer;
